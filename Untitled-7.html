@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Eric's Black Market</title>
+		<style>
+            img{
+                height: 75px;
+            }
+            input{
+                width: 40px;
+            }
+        </style>
+        <script>
+            function checkout(){
+                var price1 = 260000
+                var price2 = 119000
+                var quantity1 = document.getElementById("quantity1");
+                var quantity2 = document.getElementById("quantity2");
+                var customerSubtotal = parseInt(price1 * quantity1 + price2 * quantity2);
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <h4> Kidney </h4>
+            <img src="image.jpg"><br>
+            <span> 260,000 </span>
+            <p> Healthy Kidney! Great Deal!!!</p>
+            <input id= "quantity1" type="text" placeholder="Quantity">
+            <button onclick="checkout()">
+                checkout
+            </button>
+        </div>
+        <div>
+            <h4> Liver </h4>
+            <img src="liver.jpg"><br>
+            <span> 119,000 </span>
+            <p> Perfectly Good Liver! </p>
+        </div>
+    </body>
+<html>
